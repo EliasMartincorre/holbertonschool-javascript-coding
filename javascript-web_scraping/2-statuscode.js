@@ -11,6 +11,6 @@ request(url, function (error, response) {
   if (error) {
     console.error('error:', error);
   } else {
-    console.log('code:', response.statusCode);
+    return ('code:', response.statusCode);
   }
 });
