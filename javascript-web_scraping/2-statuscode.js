@@ -5,12 +5,10 @@ You must use the module request */
 
 const request = require('request');
 const url = process.argv[2];
-console.log(url);
-
-request(url, function (error, response) {
+request.get(url, function (error, response) {
   if (error) {
     console.error('error:', error);
   } else {
-    return ('code:', response.statusCode);
+   console.log('code:', response.statusCode);
   }
 });
